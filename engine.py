@@ -4,7 +4,7 @@ EPSILON = 1e-9
 
 
 def make_matrix(size, data=None):
-    """0으로 채워진 행렬을 만들거나, 전달받은 데이터의 행/열 크기를 검사합니다."""
+    """전달받은 데이터의 행/열 크기를 검사합니다."""
     if len(data) != size:
         raise ValueError(f"행 개수가 {size}개가 아닙니다. (실제: {len(data)}개)")
     for row in data:
